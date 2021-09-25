@@ -103,7 +103,7 @@
 
   /* Style the tab content */
   .tabcontent {
-    display: flex;
+    display: none;
     flex: 1 1 auto;
     padding: 6px 12px;
   }
@@ -196,7 +196,7 @@ function openCity(evt, cityName) {
   tabcontent = document.getElementsByClassName("tabcontent");
 
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[0].style.display = "none";
   }
 
   tablinks = document.getElementsByClassName("tablinks");
@@ -205,7 +205,7 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityName).style.display = "flex";
 
   evt.currentTarget.className += " active";
 }
