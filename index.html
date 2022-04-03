@@ -152,12 +152,13 @@
     hw12:'https://cyanexplorer.github.io/cg2021f-hw12-Cyanexplorer/',
   };
   
-  let container = document.getElementById('container');
-  let tablinks = document.getElementsByClassName("tablinks");
+
 
   function openCity(evt, cityName) {
 
     var i, tabcontent, tablinks;
+    let container = document.getElementById('container');
+    let tablinks = document.getElementsByClassName("tablinks");
     
     container.src = linkList[cityName];
     container.contentWindow.location.reload(true);
