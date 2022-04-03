@@ -153,6 +153,7 @@
   };
   
   let container = document.getElementById('container');
+  let tablinks = document.getElementsByClassName("tablinks");
   
   window.onload = function() {
       openCity(event, 'hw00');
@@ -163,14 +164,13 @@
     var i, tabcontent, tablinks;
     
     container.src = linkList[cityName];
-
-    tablinks = document.getElementsByClassName("tablinks");
+    container.contentWindow.location.reload(true);
 
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].classList.remove("active");
     }
 
-    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add("active");
   }
 </script>
 
