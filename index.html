@@ -132,11 +132,7 @@
 </div>
 
 <div class="tabcontent">
-    <iframe id="container" src="./hw00.html" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"> </iframe>
-</div>
-
-<div id="hw01" class="tabcontent">
-    <iframe src="https://ntut-cg-lab.github.io/cg2021f-hw01-Cyanexplorer/" seamless="seamless" scrolling="yes" frameborder="0" allowtransparency="true"> </iframe>
+    <iframe id="container" src="./hw00.html" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" style="display:flex"> </iframe>
 </div>
 
 <script>
@@ -173,8 +169,6 @@
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-
-    document.getElementById(cityName).style.display = "flex";
 
     evt.currentTarget.className += " active";
   }
