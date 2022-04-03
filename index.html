@@ -156,14 +156,13 @@
 
   function openCity(evt, cityName) {
 
-    var i, tabcontent, tablinks;
     let container = document.getElementById('container');
     let tablinks = document.getElementsByClassName("tablinks");
     
     container.src = linkList[cityName];
     container.contentWindow.location.reload(true);
 
-    for (i = 0; i < tablinks.length; i++) {
+    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove("active");
     }
 
